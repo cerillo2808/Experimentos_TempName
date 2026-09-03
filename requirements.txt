@@ -2,3 +2,6 @@ pandas
 numpy
 matplotlib
 kagglehub
+plotnine[extra]
+scipy
+statsmodels
