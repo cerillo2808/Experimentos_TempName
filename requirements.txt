@@ -5,3 +5,4 @@ kagglehub
 plotnine[extra]
 scipy
 statsmodels
+PyQt6
