@@ -27,8 +27,10 @@ def get_data() -> pd.DataFrame:
     # df["Error relativo (%)"] = df["Error relativo (%)"].astype(float) # convertir a float
 
     # display the first few records of the dataset
-    print("Path to file:", DATA_DIR / "Datos - Toma de datos.csv")
-    print("First 5 records:\n", df.head())
+    print("Dataset information:")
+    for i, file in enumerate(glob.glob(str(DATA_DIR / "*.csv"))):
+        print(f"\tPath to file {i + 1}: \'{file}\'")
+    print("\tFirst 5 records:\n", df.head())
 
     return df
 
